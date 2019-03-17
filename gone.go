@@ -21,6 +21,6 @@ func main() {
 }
 
 func goneHandler(w http.ResponseWriter, _ *http.Request) {
-	w.Header().Set("Content-Type", "text/html")
+    w.Header().Set("Content-Type", "text/html")
     fmt.Fprint(w, response)
 }
